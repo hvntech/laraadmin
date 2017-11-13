@@ -179,6 +179,7 @@ return [
 
         /// add
         Laravel\Socialite\SocialiteServiceProvider::class,
+        Nexmo\Laravel\NexmoServiceProvider::class,
 
     ],
 
@@ -231,6 +232,7 @@ return [
 
         // add 
         'Socialite' => Laravel\Socialite\Facades\Socialite::class,
+        'Nexmo' => Nexmo\Laravel\Facade\Nexmo::class,
 
     ],
 

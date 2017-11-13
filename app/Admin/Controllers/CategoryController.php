@@ -115,6 +115,7 @@ class CategoryController extends Controller
             // $form->ckeditor('order', trans('admin.order'));
             // $form->rate('order', trans('admin.order'));
             $form->switch('order', 'Rate')->states($states);
+            $form->ckeditor('title');
             // $form->number('order', 'Rate');
             // $form->map('21.022736', '105.801944', 'Map');
             //$form->icon('icon', trans('admin.icon'))->default('fa-bars')->rules('required')->help($this->iconHelp());
