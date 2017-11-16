@@ -37,9 +37,9 @@ return [
 
     // add 
     'facebook' => [
-        'client_id'     => env('FB_CLIENT_ID'),
-        'client_secret' => env('FB_CLIENT_SECRET'),
-        'redirect'      => env('FB_URL'),
+        'client_id'     => env('FB_CLIENT_ID', '1265473776903312'),
+        'client_secret' => env('FB_CLIENT_SECRET', '4de1ddc78e3a2337b6c99658a6370e42'),
+        'redirect'      => env('FB_URL', 'http://admin.dev:8086/social/handle/facebook'),
     ],
 
     'twitter' => [

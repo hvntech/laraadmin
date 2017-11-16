@@ -116,6 +116,9 @@ class CategoryController extends Controller
             // $form->rate('order', trans('admin.order'));
             $form->switch('order', 'Rate')->states($states);
             $form->ckeditor('title');
+            $startDate = "2017-11-13";
+            $endDate = "2017-11-15";
+            $form->dateRange($startDate, $endDate, 'Date Range');
             // $form->number('order', 'Rate');
             // $form->map('21.022736', '105.801944', 'Map');
             //$form->icon('icon', trans('admin.icon'))->default('fa-bars')->rules('required')->help($this->iconHelp());

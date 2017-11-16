@@ -3,6 +3,7 @@ use Encore\Admin\Form;
 use App\Admin\Extensions\Form\CKEditor;
 use Encore\Admin\Grid\Column;
 use App\Admin\Extensions\Popover;
+use Encore\Admin\Facades\Admin;
 /**
  * Laravel-admin - admin builder based on Laravel.
  * @author z-song <https://github.com/z-song>
@@ -29,3 +30,11 @@ Column::extend('color', function ($value, $color) {
 });
 
 Column::extend('popover', Popover::class);
+
+Admin::navbar(function (\Encore\Admin\Widgets\Navbar $navbar) {
+
+    // $navbar->left(view('search-bar'));
+
+    $navbar->add(view('partials.search-bar'));
+    $navbar->add(new \App\Admin\Extensions\Nav\Links());
+});
